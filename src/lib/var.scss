@@ -1,13 +1,13 @@
 $colorMap: (
-	background: #F5F5F7,
+	background: #f5f5f7
 );
-@function color ($key) {
+@function color($key) {
 	@return map-get($colorMap, $key);
 }
 
 $sizeMap: (
-	default: 16px,
+	default: 16px
 );
-@function size ($key: 'default') {
+@function size($key: 'default') {
 	@return map-get($sizeMap, $key);
 }
