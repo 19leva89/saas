@@ -107,7 +107,7 @@ router.get('/apple', function (req, res) {
       },
     },
     gift: {
-      title: 'Take your pick of Mother’s Day gifts.',
+      title: 'Take your pick of Mother’s Day gifts',
       descriptions:
         'So many ways to thank whoever you call Mom.',
       link: {
@@ -116,7 +116,7 @@ router.get('/apple', function (req, res) {
       },
     },
     card: {
-      title: 'card',
+      title: 'Card',
       descriptions:
         'Get up to 3% Daily Cash back with every purchase.',
       link: {
