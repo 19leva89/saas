@@ -1,9 +1,9 @@
-@use './space.scss' as s;
+@use './space.scss' as sp;
 @use './var.scss' as var;
 
 @mixin linkAction {
 	color: var.color('primary');
-	padding-right: calc(s.space(2) + 7px);
+	padding-right: calc(sp.space(2) + 7px);
 	position: relative;
 	&::after {
 		display: block;
