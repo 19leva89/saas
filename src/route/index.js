@@ -126,7 +126,7 @@ router.get('/apple', function (req, res) {
     },
     footer: [
       {
-        title: 'Store',
+        title: 'Shop and Learn',
         links: [
           { url: '#Mac', text: 'Mac' },
           { url: '#iPad', text: 'iPad' },

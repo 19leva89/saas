@@ -1,30 +1,30 @@
-.section, .header, .product {
+.section, .header, .product, .add, .footer {
   display: flex;
   justify-content: center;
   padding: 0 16px;
 }
 
-.section__content, .header__content {
+.section__content, .header__content, .add__content, .footer__content {
   max-width: 1200px;
   width: 100%;
 }
 @media all and (width < 1440px) {
-  .section__content, .header__content {
+  .section__content, .header__content, .add__content, .footer__content {
     max-width: 1100px;
   }
 }
 @media all and (width < 1260px) {
-  .section__content, .header__content {
+  .section__content, .header__content, .add__content, .footer__content {
     max-width: 900px;
   }
 }
 @media all and (width < 1000px) {
-  .section__content, .header__content {
+  .section__content, .header__content, .add__content, .footer__content {
     max-width: 700px;
   }
 }
 @media all and (width < 620px) {
-  .section__content, .header__content {
+  .section__content, .header__content, .add__content, .footer__content {
     max-width: 500px;
   }
 }
@@ -226,6 +226,92 @@
 .product--card {
   background-image: url(/img/card.png);
   background-color: #fbfbfd;
+}
+
+.add {
+  background-color: #ffffff;
+}
+
+.add__block {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.add__content {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+}
+
+.add__block-title {
+  font-size: 14px;
+}
+
+.add__link {
+  transition: opacity 0.7s;
+  cursor: pointer;
+  color: #0066cc;
+  padding-right: 15px;
+  position: relative;
+}
+.add__link:hover {
+  opacity: 0.7;
+}
+.add__link:active {
+  opacity: 0.3;
+}
+.add__link::after {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 6px);
+  content: "";
+  width: 7px;
+  height: 12px;
+  background-image: url("/svg/arrowAction.svg");
+}
+
+.footer {
+  background-color: #f5f5f7;
+  flex-wrap: wrap;
+}
+
+.footer__content {
+  display: flex;
+  width: 180px;
+  min-width: 100px;
+  padding: 40px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.footer__block-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.footer__link {
+  transition: opacity 0.7s;
+  cursor: pointer;
+  color: #424245;
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer__link:hover {
+  opacity: 0.7;
+}
+.footer__link:active {
+  opacity: 0.3;
 }
 
 /*# sourceMappingURL=style.css.map */
