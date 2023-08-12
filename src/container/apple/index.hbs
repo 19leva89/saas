@@ -24,6 +24,22 @@
 		{{/with}}
 	</div>
 
+	<div class="add">
+		{{#with header.ad}}
+			<div class="add__content">
+				<div class="add__block">
+					<p class="add__block-title">{{title}}</p>
+				</div>
+
+				<div class="add__block">
+					{{#with link}}
+						<a href="{{url}}" class="add__link">{{text}}</a>
+					{{/with}}
+				</div>
+			</div>
+		{{/with}}
+	</div>
+
 	{{#with iphone_pro}}
 		<section class="product product-big product--iphone-pro product--dark product--top">
 			<div class="product__content">
@@ -172,6 +188,22 @@
 		</div>
 
 	</div>
+
+	<div class="footer">
+		{{#each footer}}
+			<div class="footer__content">
+				{{#with this}}
+					<div class="footer__block">
+						<p class="footer__block-title">{{title}}</p>
+						{{#each links}}
+							<a href="{{url}}" class="footer__link">{{text}}</a>
+						{{/each}}
+					</div>
+				{{/with}}
+			</div>
+		{{/each}}
+	</div>
+
 
 </div>
 
